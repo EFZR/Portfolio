@@ -1,6 +1,6 @@
 # 👤 Personal Portfpolio
 
-This project is a personal portfolio website that showcases my skills and projects.
+This project is a personal portfolio website that showcases my skills and projects. Check it out [here](https://656cc75a68c8cf301e97e7ae--helpful-kitten-b5ae2a.netlify.app/).
 
 ## 🛠️ Built With
 
@@ -13,3 +13,4 @@ The portfolio is built with the following technologies:
 - [Framer Motion](https://www.framer.com/motion/)
 - [Firebase](https://firebase.google.com/)
 - [Vanilla CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Netlify](https://www.netlify.com/)
