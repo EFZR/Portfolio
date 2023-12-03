@@ -1,4 +1,6 @@
 import { collection, addDoc } from "firebase/firestore";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import usePortfolio from "../hooks/usePortfolio";
 import db from "../config/firebase";
 import "../styles/Contact.css";
@@ -6,6 +8,11 @@ import "../styles/Contact.css";
 function Contact() {
   const { formData, handleInputChange, clearForm } = usePortfolio();
   const { name, email, message } = formData;
+  const location = useLocation();
+
+  useEffect(() => {
+    clearForm();
+  }, [location.pathname]);
 
   async function handleSubmit(e) {
     e.preventDefault();
