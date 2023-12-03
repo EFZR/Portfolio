@@ -1,0 +1,53 @@
+.perfil {
+  width: 250px;
+  height: 250px;
+  border: 8px var(--first-color) solid;
+  background-color: var(--body-color);
+  border-radius: 50%;
+  justify-self: center;
+  display: grid;
+  place-items: center;
+  transition: background-color 0.4s;
+}
+
+@media screen and (min-width: 1150px) {
+  .perfil {
+    width: 500px;
+    height: 500px;
+    border-width: 15px;
+  }
+}
+
+.perfil__content {
+  width: 180px;
+  height: 180px;
+  border: 10px var(--first-color) solid;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background: linear-gradient(
+    180deg,
+    hsl(var(--hue), 90%, 80%),
+    hsl(var(--hue), 90%, 30%)
+  );
+}
+
+@media screen and (min-width: 1150px) {
+  .perfil__content {
+    width: 360px;
+    height: 360px;
+    border: 15px;
+  }
+}
+
+.perfil__img {
+  width: 150px;
+}
+
+@media screen and (min-width: 1150px) {
+  .perfil__img {
+    width: 300px;
+  }
+}

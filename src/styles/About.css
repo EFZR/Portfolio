@@ -1,0 +1,123 @@
+.about {
+  border-bottom: 8px solid var(--first-color);
+}
+
+@media screen and (min-width: 576px) {
+  .about__container {
+    grid-template-columns: 400px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .about__container {
+    grid-template-columns: 500px 440px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3rem;
+    padding-top: 2rem;
+  }
+}
+
+.about__page {
+  row-gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.about__perfil {
+  justify-self: center;
+}
+
+.about__content {
+  row-gap: 3rem;
+}
+
+.about__data {
+  row-gap: 2rem;
+}
+
+@media screen and (min-width: 1150px) {
+  .about__data {
+    row-gap: 3.5rem;
+  }
+}
+
+.about__info {
+  row-gap: 0.75rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 1150px) {
+  .about__info {
+    text-align: initial;
+  }
+}
+
+.about__name {
+  font-size: var(--h1-font-size);
+}
+
+.about__profession {
+  font-size: var(--h2-font-size);
+}
+
+.about__description b {
+  color: var(--first-color);
+}
+
+.about__button {
+  justify-self: center;
+}
+
+@media screen and (min-width: 1150px) {
+  .about__button {
+    justify-self: start;
+  }
+}
+
+.about__skills-title {
+  font-size: var(--h3-font-size);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1150px) {
+  .about__skills-title {
+    text-align: initial;
+  }
+}
+
+.about__skills-content {
+  grid-template-columns: repeat(5, max-content);
+  align-items: center;
+  justify-content: center;
+  gap: 2rem 1.5rem;
+}
+
+@media screen and (max-width: 320px) {
+  .about__skills-content {
+    grid-template-columns: repeat(4, max-content);
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .about__skills-content {
+    grid-template-columns: repeat(7 , max-content);
+    justify-content: initial;
+  }
+}
+
+.about__skills-img {
+  width: 35px;
+  transition: transform 0.4s;
+}
+
+.about__skills-img:hover {
+  transform: translateY(-5px);
+}
+
+@media screen and (min-width: 1150px) {
+  .about__skills-img {
+    width: 40px;
+  }
+}

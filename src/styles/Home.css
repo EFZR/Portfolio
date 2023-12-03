@@ -1,0 +1,143 @@
+.home {
+  position: relative;
+  border-bottom: 8px solid var(--first-color);
+}
+
+.home__rectangle {
+  width: 100%;
+  height: 220px;
+  background-color: var(--first-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: var(--z-back);
+}
+
+@media screen and (min-width: 1150px) {
+  .home__rectangle {
+    width: 30vw;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .home__rectangle {
+    width: 33vw;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 2048px) {
+  .home__rectangle {
+    width: 40vw;
+    height: 100%;
+  }
+}
+
+.home__container {
+  row-gap: 1rem;
+  padding-block: 1rem 3rem;
+}
+
+@media screen and (min-width: 1150px) {
+  .home__container {
+    position: relative;
+    grid-template-columns: 500px auto;
+    align-items: center;
+    column-gap: 4rem;
+    padding-block: 3.5rem 8rem;
+  }
+}
+
+.home__content {
+  row-gap: 3rem;
+}
+
+@media screen and (min-width: 1150px) {
+  .home__content {
+    row-gap: 4rem;
+  }
+}
+
+.home__data {
+  row-gap: 1.5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 1150px) {
+  .home__data {
+    row-gap: 1rem;
+    text-align: initial;
+  }
+}
+
+.home__name {
+  font-size: var(--biggest-font-size);
+}
+
+.home__profession {
+  font-size: var(--h2-font-size);
+}
+
+.home__social {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.5rem;
+}
+
+@media screen and (min-width: 1150px) {
+  .home__social {
+    flex-direction: column;
+    row-gap: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: -4rem;
+  }
+}
+
+.home__social-link {
+  font-size: 1.5rem;
+  color: var(--title-color);
+  transition: color 0.4s;
+}
+
+@media screen and (min-width: 1150px) {
+  .home__social-link {
+    color: var(--first-color);
+  }
+}
+
+.home__social-link:hover {
+  color: var(--first-color);
+}
+
+.home__button {
+  justify-self: center;
+}
+
+@media screen and (min-width: 1150px) {
+  .home__button {
+    justify-self: start;
+  }
+}
+
+.home__container-contact {
+  row-gap: 1rem;
+  padding-block: 1rem 3rem;
+}
+
+@media screen and (min-width: 1150px) {
+  .home__container-contact {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    align-items: center;
+    column-gap: 25rem;
+    padding-block: 1rem 5rem;
+  }
+
+  .home__container-contact .section__title {
+    margin: 0;
+    text-align: initial;
+  }
+}
