@@ -1,6 +1,6 @@
 # 👤 Personal Portfpolio
 
-This project is a personal portfolio website that showcases my skills and projects. Check it out [here](https://656cc75a68c8cf301e97e7ae--helpful-kitten-b5ae2a.netlify.app/).
+This project is a personal portfolio website that showcases my skills and projects. Check it out [here](https://helpful-kitten-b5ae2a.netlify.app/).
 
 ## 🛠️ Built With
 
