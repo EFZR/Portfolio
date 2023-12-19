@@ -26,7 +26,7 @@ const PortfolioProvider = ({ children }) => {
       email: "",
       message: "",
     });
-  }
+  };
 
   return (
     <PortfolioContext.Provider

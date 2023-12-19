@@ -4,6 +4,7 @@ import work2 from "../assets/work-2.svg";
 import work3 from "../assets/work-3.svg";
 import work4 from "../assets/work-4.svg";
 import work5 from "../assets/work-5.svg";
+import work6 from "../assets/work-6.svg";
 import cisco from "../assets/certification-cisco.svg";
 import udemy from "../assets/certification-udemy.svg";
 
@@ -72,6 +73,12 @@ export const WORK = [
     link: "https://github.com/EFZR/Django-ToDoList",
     image: work5,
   },
+  {
+    title: "Quiosco App",
+    subtitle: "Quiosco App made with react swr and nextjs",
+    link: "https://quiosco-app-production-5edc.up.railway.app/",
+    image: work6,
+  }
 ]
 
 export const ACHIVEMENT = [
@@ -94,3 +101,8 @@ export const ACHIVEMENT = [
     image: udemy,
   }
 ]
+
+export const toastTypes = {
+  success: "success",
+  error: "error",
+}
