@@ -2,13 +2,15 @@ import { collection, addDoc } from "firebase/firestore";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import usePortfolio from "../hooks/usePortfolio";
+import useToast from "../hooks/useToast";
 import db from "../config/firebase";
 import "../styles/Contact.css";
 
 function Contact() {
   const { formData, handleInputChange, clearForm } = usePortfolio();
-  const { name, email, message } = formData;
+  const { successToast, errorToast } = useToast();
   const location = useLocation();
+  const { name, email, message } = formData;
 
   useEffect(() => {
     clearForm();
@@ -23,9 +25,9 @@ function Contact() {
       const inbox = collection(db, "inbox");
       await addDoc(inbox, formData);
       clearForm();
-      alert("Message sent");
+      successToast("Message sent successfully");
     } catch (error) {
-      alert(error.message);
+      errorToast(error.message);
     }
   }
 
