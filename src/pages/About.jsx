@@ -13,6 +13,10 @@ import python from "../assets/about-python.svg";
 import react from "../assets/about-react.svg";
 import tailwind from "../assets/about-tailwind-css.svg";
 import vite from "../assets/about-vite.svg";
+import mysql from "../assets/about-mysql.svg";
+import rust from "../assets/about-rust.svg";
+import nodejs from "../assets/about-nodejs.svg";
+import firebase from "../assets/about-firebase.svg";
 
 function About() {
   return (
@@ -43,6 +47,7 @@ function About() {
             <div className="about__skills">
               <h3 className="about__skills-title">My Skills Are</h3>
               <div className="about__skills-content grid">
+                <img src={rust} alt="rust" className="about__skills-img" />
                 <img src={python} alt="python" className="about__skills-img" />
                 <img src={csharp} alt="csharp" className="about__skills-img" />
                 <img src={django} alt="django" className="about__skills-img" />
@@ -61,6 +66,9 @@ function About() {
                   alt="tailwind"
                   className="about__skills-img"
                 />
+                <img src={mysql} alt="mysql" className="about__skills-img" />
+                <img src={firebase} alt="firebase" className="about__skills-img" />
+                <img src={nodejs} alt="nodejs" className="about__skills-img" />
                 <img src={git} alt="git" className="about__skills-img" />
                 <img src={github} alt="github" className="about__skills-img" />
               </div>
