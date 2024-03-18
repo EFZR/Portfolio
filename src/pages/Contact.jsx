@@ -1,5 +1,5 @@
 import { collection, addDoc } from "firebase/firestore";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import usePortfolio from "../hooks/usePortfolio";
 import useToast from "../hooks/useToast";
@@ -8,9 +8,10 @@ import "../styles/Contact.css";
 
 function Contact() {
   const { formData, handleInputChange, clearForm } = usePortfolio();
-  const { successToast, errorToast } = useToast();
+  const { successToast, errorToast, warningToast } = useToast();
   const location = useLocation();
   const { name, email, message } = formData;
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     clearForm();
@@ -20,10 +21,14 @@ function Contact() {
     e.preventDefault();
     try {
       if (Object.values(formData).includes("")) {
-        throw new Error("Please fill all the fields");
+        throw new Error("Please fill all the fields.");
       }
       const inbox = collection(db, "inbox");
-      await addDoc(inbox, formData);
+      warningToast("Sending message...");
+      setLoading(true);
+      await addDoc(inbox, formData).finally(() => {
+        setLoading(false);
+      });
       clearForm();
       successToast("Message sent successfully");
     } catch (error) {
@@ -49,6 +54,7 @@ function Contact() {
                 placeholder="Write your name"
                 value={name}
                 onChange={handleInputChange}
+                disabled={loading}
               />
               <label htmlFor="user_name" className="contact__label">
                 Name
@@ -63,6 +69,7 @@ function Contact() {
                 placeholder="Write your email"
                 value={email}
                 onChange={handleInputChange}
+                disabled={loading}
               />
               <label htmlFor="user_email" className="contact__label">
                 Email address
@@ -77,13 +84,18 @@ function Contact() {
               placeholder="Write your message"
               value={message}
               onChange={handleInputChange}
+              disabled={loading}
             ></textarea>
             <label htmlFor="user_message" className="contact__label">
               Message
             </label>
           </div>
-          <button type="submit" className="contact__send button">
-            Send Message
+          <button
+            type="submit"
+            className="contact__send button"
+            disabled={loading}
+          >
+            {loading ? "Sending..." : "Send Message"}
           </button>
         </form>
       </div>

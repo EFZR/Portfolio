@@ -1,5 +1,5 @@
 import { BiRightArrowCircle } from "react-icons/bi";
-import { WORK } from "../constants";
+import { WORK } from "../constants/index";
 import "../styles/Work.css";
 
 function Work() {

@@ -136,7 +136,6 @@ img {
   .section {
     padding-block: 7rem 2rem;
   }
-  
 }
 
 .section__title {
@@ -169,6 +168,10 @@ img {
   box-shadow: 0 10px 30px var(hsla(var(--hue), 90%, 30%, 0));
 }
 
+.button:is(:disabled) {
+  background-color: var(--first-color-light);
+  cursor: wait;
+}
 /* Scrollbar styles */
 
 ::-webkit-scrollbar {

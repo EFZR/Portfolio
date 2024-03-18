@@ -1,4 +1,11 @@
-import { BiServer, BiBrush, BiCodeAlt } from "react-icons/bi"
+import {
+  BiServer,
+  BiBrush,
+  BiCodeAlt,
+  BiXCircle,
+  BiCheckCircle,
+  BiError,
+} from "react-icons/bi";
 import work1 from "../assets/work-1.svg";
 import work2 from "../assets/work-2.svg";
 import work3 from "../assets/work-3.svg";
@@ -8,11 +15,11 @@ import work6 from "../assets/work-6.svg";
 import cisco from "../assets/certification-cisco.svg";
 import udemy from "../assets/certification-udemy.svg";
 
-
 export const SERVICE = [
   {
     title: "Web Development",
-    description: "I like to develop web applications with the latest technologies and trends.",
+    description:
+      "I like to develop web applications with the latest technologies and trends.",
     icon: BiCodeAlt,
     list: [
       "I enjoy developing web applications.",
@@ -22,25 +29,27 @@ export const SERVICE = [
   },
   {
     title: "Backend Dev",
-    description: "Implement logic for web applications using best practices and architectures.",
+    description:
+      "Implement logic for web applications using best practices and architectures.",
     icon: BiServer,
     list: [
       "Clean code is my goal on each project.",
       "Learn the new technologies and architecture to make functional and scalable projects.",
-      "Analityc and problem solving skills."
+      "Analityc and problem solving skills.",
     ],
   },
   {
     title: "Web Design",
-    description: "I like to design websites providing a good user Experience and user interface.",
+    description:
+      "I like to design websites providing a good user Experience and user interface.",
     icon: BiBrush,
     list: [
       "Fast and functional designs.",
       "I like to create designs that are easy to use.",
-      "UX/UI design."
+      "UX/UI design.",
     ],
-  }
-]
+  },
+];
 
 export const WORK = [
   {
@@ -78,8 +87,8 @@ export const WORK = [
     subtitle: "Quiosco App made with react swr and nextjs",
     link: "https://quiosco-app-production-5edc.up.railway.app/",
     image: work6,
-  }
-]
+  },
+];
 
 export const ACHIVEMENT = [
   {
@@ -99,10 +108,11 @@ export const ACHIVEMENT = [
     subtitle: "Universidad Python - De cero a Experto",
     link: "https://www.udemy.com/certificate/UC-dff1a774-58e2-4da5-ad39-f89ed68dab3b/",
     image: udemy,
-  }
-]
+  },
+];
 
 export const toastTypes = {
-  success: "success",
-  error: "error",
-}
+  success: [<BiCheckCircle className="toast__icon" />, "success"],
+  error: [<BiXCircle className="toast__icon" />, "error"],
+  warning: [<BiError className="toast__icon" />, "warning"],
+};

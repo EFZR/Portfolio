@@ -1,6 +1,6 @@
 import "../styles/Service.css";
 import { Fragment } from "react";
-import { SERVICE } from "../constants";
+import { SERVICE } from "../constants/index";
 import ServiceModal from "./ServiceModal";
 import usePortfolio from "../hooks/usePortfolio";
 

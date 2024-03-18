@@ -1,5 +1,4 @@
 import useToast from "../hooks/useToast";
-import { BiError, BiCheck } from "react-icons/bi";
 import "../styles/ToastContainer.css";
 
 function ToastContainer() {
@@ -14,13 +13,9 @@ function ToastContainer() {
       {toastAlert.map((alert) => (
         <div
           key={alert.id}
-          className={`toast__alert toast__alert-${alert.type}`}
+          className={`toast__alert toast__alert-${alert.type[1]}`}
         >
-          {alert.type === "error" ? (
-            <BiError className="toast__icon" />
-          ) : (
-            <BiCheck className="toast__icon" />
-          )}
+          {alert.type[0]}
           {alert.message}
         </div>
       ))}

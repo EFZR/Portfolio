@@ -36,12 +36,25 @@ const ToastProvider = ({ children }) => {
     }, 2000);
   };
 
+  const warningToast = (message) => {
+    const alert = {
+      id: Math.random(),
+      type: toastTypes.warning,
+      message,
+    };
+    setToastAlert([...toastAlert, alert]);
+    setTimeout(() => {
+      setToastAlert(toastRef.current.filter((a) => a.id !== alert.id));
+    }, 2000);
+  };
+
   return (
     <ToastContext.Provider
       value={{
         toastAlert,
         successToast,
         errorToast,
+        warningToast,
       }}
     >
       {children}

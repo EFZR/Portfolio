@@ -1,4 +1,4 @@
-import { ACHIVEMENT } from "../constants";
+import { ACHIVEMENT } from "../constants/index";
 import { useLocation } from "react-router-dom";
 import "../styles/Achivement.css";
 

@@ -53,6 +53,10 @@
   border-bottom: 5px solid #dc3545;
 }
 
+.toast__alert-warning {
+  border-bottom: 5px solid #ffc107;
+}
+
 .toast__icon {
   min-width: 20px;
   height: auto;
@@ -64,4 +68,8 @@
 
 .toast__alert-error :is(.toast__icon) {
   color: #dc3545;
+}
+
+.toast__alert-warning :is(.toast__icon) {
+  color: #ffc107;
 }
