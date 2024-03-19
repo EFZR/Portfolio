@@ -37,7 +37,16 @@
   justify-items: center;
   align-items: center;
   row-gap: 1.2rem;
-  transition: background-color 0.4s;
+  opacity: 0;
+  filter: blur(4px);
+  transform: translateY(10%);
+  transition: background-color 0.4s, opacity 0.5s, filter 0.5s, transform 0.5s;
+}
+
+.achivement__card.show__observer {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
 }
 
 .achivement__img {

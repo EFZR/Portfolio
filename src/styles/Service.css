@@ -30,7 +30,16 @@
   padding: 3.5rem 1.5rem;
   box-shadow: 0 12px 24px var(--shadow-color);
   text-align: center;
-  transition: background-color 0.4s;
+  opacity: 0;
+  filter: blur(4px);
+  transform: translateY(10%);
+  transition: background-color 0.4s, opacity 0.5s, filter 0.5s, transform 0.5s;
+}
+
+.services__card.show__observer {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
 }
 
 @media screen and (min-width: 1150px) {
