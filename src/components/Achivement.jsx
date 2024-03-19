@@ -1,9 +1,12 @@
 import { ACHIVEMENT } from "../constants/index";
 import { useLocation } from "react-router-dom";
+import useObserver from "../hooks/useObserver";
 import "../styles/Achivement.css";
 
 function Achivement() {
   const location = useLocation();
+  useObserver();
+
   return (
     <section className="section achivement">
       <h2 className="section__title">Certification Achivements</h2>
@@ -13,7 +16,7 @@ function Achivement() {
         }`}
       >
         {ACHIVEMENT.map((achivement, index) => (
-          <article className="achivement__card grid" key={index}>
+          <article className="achivement__card grid" key={index} observe="true">
             <img
               src={achivement.image}
               alt="image"
