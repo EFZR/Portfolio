@@ -1,5 +1,5 @@
 import { createContext, useState, useRef, useEffect } from "react";
-import { toastTypes } from "../constants/index";
+import { TOASTYPES } from "../constants/index";
 
 export const ToastContext = createContext();
 
@@ -14,7 +14,7 @@ const ToastProvider = ({ children }) => {
   const successToast = (message) => {
     const alert = {
       id: Math.random(),
-      type: toastTypes.success,
+      type: TOASTYPES.success,
       active: true,
       message,
     };
@@ -27,7 +27,7 @@ const ToastProvider = ({ children }) => {
   const errorToast = (message) => {
     const alert = {
       id: Math.random(),
-      type: toastTypes.error,
+      type: TOASTYPES.error,
       message,
     };
     setToastAlert([...toastAlert, alert]);
@@ -39,7 +39,7 @@ const ToastProvider = ({ children }) => {
   const warningToast = (message) => {
     const alert = {
       id: Math.random(),
-      type: toastTypes.warning,
+      type: TOASTYPES.warning,
       message,
     };
     setToastAlert([...toastAlert, alert]);
