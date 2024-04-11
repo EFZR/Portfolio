@@ -102,7 +102,7 @@
 
 @media screen and (min-width: 1150px) {
   .about__skills-content {
-    grid-template-columns: repeat(8 , max-content);
+    grid-template-columns: repeat(7 , max-content);
     justify-content: initial;
   }
 }
