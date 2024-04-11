@@ -111,7 +111,7 @@ export const ACHIVEMENT = [
   },
 ];
 
-export const toastTypes = {
+export const TOASTYPES = {
   success: [<BiCheckCircle className="toast__icon" />, "success"],
   error: [<BiXCircle className="toast__icon" />, "error"],
   warning: [<BiError className="toast__icon" />, "warning"],
