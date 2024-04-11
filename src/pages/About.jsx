@@ -2,6 +2,7 @@ import "../styles/About.css";
 import { Link } from "react-router-dom";
 import ProfileImage from "../components/ProfileImage";
 import csharp from "../assets/about-csharp.svg";
+import net from "../assets/about-.net.svg";
 import javascript from "../assets/about-javascript.svg";
 import html from "../assets/about-html.svg";
 import css from "../assets/about-css.svg";
@@ -51,9 +52,11 @@ function About() {
                 <img src={rust} alt="rust" className="about__skills-img" />
                 <img src={tokio} alt="tokio" className="about__skills-img" />
                 <img src={python} alt="python" className="about__skills-img" />
-                <img src={csharp} alt="csharp" className="about__skills-img" />
-                <img src={django} alt="django" className="about__skills-img" />
                 <img src={flask} alt="flask" className="about__skills-img" />
+                <img src={django} alt="django" className="about__skills-img" />
+                <img src={csharp} alt="csharp" className="about__skills-img" />
+                <img src={net} alt=".net" className="about__skills-img" />
+                <img src={nodejs} alt="nodejs" className="about__skills-img" />
                 <img src={react} alt="react" className="about__skills-img" />
                 <img src={css} alt="css" className="about__skills-img" />
                 <img src={html} alt="html" className="about__skills-img" />
@@ -74,7 +77,6 @@ function About() {
                   alt="firebase"
                   className="about__skills-img"
                 />
-                <img src={nodejs} alt="nodejs" className="about__skills-img" />
                 <img src={git} alt="git" className="about__skills-img" />
                 <img src={github} alt="github" className="about__skills-img" />
               </div>
