@@ -27,6 +27,16 @@
 
 .work__card {
   justify-self: center;
+  opacity: 0;
+  filter: blur(4px);
+  transform: translateY(10%);
+  transition: opacity 0.5s, filter 0.5s, transform 0.5s;
+}
+
+.work__card.show__observer {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
 }
 
 .work__link {
