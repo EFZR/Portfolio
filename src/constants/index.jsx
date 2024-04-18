@@ -6,14 +6,8 @@ import {
   BiCheckCircle,
   BiError,
 } from "react-icons/bi";
-import work1 from "../assets/work-1.svg";
-import work2 from "../assets/work-2.svg";
-import work3 from "../assets/work-3.svg";
-import work4 from "../assets/work-4.svg";
-import work5 from "../assets/work-5.svg";
-import work6 from "../assets/work-6.svg";
-import cisco from "../assets/certification-cisco.svg";
-import udemy from "../assets/certification-udemy.svg";
+import Cisco from "../svg/certification-cisco.jsx";
+import Udemy from "../svg/certification-udemy.jsx";
 
 export const SERVICE = [
   {
@@ -56,37 +50,37 @@ export const WORK = [
     title: "CRM API",
     subtitle: "API REST made with C# and .NET",
     link: "https://github.com/EFZR/Chat-appify",
-    image: work1,
+    image: "/work-1.svg",
   },
   {
     title: "Chat - Appify",
     subtitle: "Chat App made with React and flask",
     link: "https://github.com/EFZR/Chat-appify",
-    image: work2,
+    image: "/work-2.svg",
   },
   {
     title: "News App",
     subtitle: "News App made with react native",
     link: "https://github.com/EFZR/newspaper-project",
-    image: work3,
+    image: "/work-3.svg",
   },
   {
     title: "CRM",
     subtitle: "Basic CRM made with django full stack framework",
     link: "https://github.com/EFZR/Django_CRM",
-    image: work4,
+    image: "/work-4.svg",
   },
   {
     title: "To do list",
     subtitle: "To do list made with react django full stack framework",
     link: "https://github.com/EFZR/Django-ToDoList",
-    image: work5,
+    image: "/work-5.svg",
   },
   {
     title: "Quiosco App",
     subtitle: "Quiosco App made with react swr and nextjs",
     link: "https://quiosco-app-production-5edc.up.railway.app/",
-    image: work6,
+    image: "/work-6.svg",
   },
 ];
 
@@ -95,19 +89,19 @@ export const ACHIVEMENT = [
     title: "Networks",
     subtitle: "CCNA: Introduction to Networks",
     link: "https://www.credly.com/badges/db35c34a-09d4-4502-8541-33230e1dd420/public_url",
-    image: cisco,
+    image: <Cisco />,
   },
   {
     title: "Networks Essentials",
     subtitle: "CCNA: Switching, Routing, and Wireless Essentials",
     link: "https://www.credly.com/badges/6f1f2d2d-9dc8-4b42-8995-08f5adb33ca8/public_url",
-    image: cisco,
+    image: <Cisco />,
   },
   {
     title: "Python",
     subtitle: "Universidad Python - De cero a Experto",
     link: "https://www.udemy.com/certificate/UC-dff1a774-58e2-4da5-ad39-f89ed68dab3b/",
-    image: udemy,
+    image: <Udemy />,
   },
 ];
 

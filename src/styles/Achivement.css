@@ -62,8 +62,3 @@
   cursor: pointer;
   align-self: center;
 }
-
-.dark-theme .achivement__img {
-  background-color: var(--white-color);
-  border-radius: 50%;
-}

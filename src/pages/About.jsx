@@ -1,24 +1,24 @@
 import "../styles/About.css";
 import { Link } from "react-router-dom";
 import ProfileImage from "../components/ProfileImage";
-import csharp from "../assets/about-csharp.svg";
-import net from "../assets/about-.net.svg";
-import javascript from "../assets/about-javascript.svg";
-import html from "../assets/about-html.svg";
-import css from "../assets/about-css.svg";
-import django from "../assets/about-django.svg";
-import flask from "../assets/about-flask.svg";
-import git from "../assets/about-git.svg";
-import github from "../assets/about-github.svg";
-import python from "../assets/about-python.svg";
-import react from "../assets/about-react.svg";
-import tailwind from "../assets/about-tailwind-css.svg";
-import vite from "../assets/about-vite.svg";
-import mysql from "../assets/about-mysql.svg";
-import rust from "../assets/about-rust.svg";
-import nodejs from "../assets/about-nodejs.svg";
-import firebase from "../assets/about-firebase.svg";
-import tokio from "../assets/about-tokio.svg";
+import AboutCsharp from "../svg/about-csharp";
+import AboutCss from "../svg/about-css";
+import AboutDjango from "../svg/about-django";
+import AboutDotnet from "../svg/about-dotnet";
+import AboutFirebase from "../svg/about-firebase";
+import AboutFlask from "../svg/about-flask";
+import AboutGit from "../svg/about-git";
+import AboutGithub from "../svg/about-github";
+import AboutHtml from "../svg/about-html";
+import AboutJavascript from "../svg/about-javascript";
+import Aboutmysql from "../svg/about-mysql";
+import AboutNodejs from "../svg/about-nodejs";
+import AboutPython from "../svg/about-python";
+import AboutReact from "../svg/about-react";
+import AboutRust from "../svg/about-rust";
+import AboutTailwindCss from "../svg/about-tailwind-css";
+import AboutTokio from "../svg/about-tokio";
+import AboutVite from "../svg/about-vite";
 
 function About() {
   return (
@@ -49,36 +49,24 @@ function About() {
             <div className="about__skills">
               <h3 className="about__skills-title">My Skills Are</h3>
               <div className="about__skills-content grid">
-                <img src={rust} alt="rust" className="about__skills-img" />
-                <img src={tokio} alt="tokio" className="about__skills-img" />
-                <img src={python} alt="python" className="about__skills-img" />
-                <img src={flask} alt="flask" className="about__skills-img" />
-                <img src={django} alt="django" className="about__skills-img" />
-                <img src={csharp} alt="csharp" className="about__skills-img" />
-                <img src={net} alt=".net" className="about__skills-img" />
-                <img src={nodejs} alt="nodejs" className="about__skills-img" />
-                <img src={react} alt="react" className="about__skills-img" />
-                <img src={css} alt="css" className="about__skills-img" />
-                <img src={html} alt="html" className="about__skills-img" />
-                <img
-                  src={javascript}
-                  alt="javascript"
-                  className="about__skills-img"
-                />
-                <img src={vite} alt="vite" className="about__skills-img" />
-                <img
-                  src={tailwind}
-                  alt="tailwind"
-                  className="about__skills-img"
-                />
-                <img src={mysql} alt="mysql" className="about__skills-img" />
-                <img
-                  src={firebase}
-                  alt="firebase"
-                  className="about__skills-img"
-                />
-                <img src={git} alt="git" className="about__skills-img" />
-                <img src={github} alt="github" className="about__skills-img" />
+                <AboutRust />
+                <AboutTokio />
+                <AboutPython />
+                <AboutDjango />
+                <AboutFlask />
+                <AboutCsharp />
+                <AboutDotnet />
+                <AboutNodejs />
+                <AboutReact />
+                <AboutJavascript />
+                <AboutHtml />
+                <AboutCss />
+                <AboutTailwindCss />
+                <AboutVite />
+                <AboutGit />
+                <AboutGithub />
+                <AboutFirebase />
+                <Aboutmysql />
               </div>
             </div>
           </div>
