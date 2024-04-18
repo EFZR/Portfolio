@@ -17,11 +17,7 @@ function Achivement() {
       >
         {ACHIVEMENT.map((achivement, index) => (
           <article className="achivement__card grid" key={index} observe="true">
-            <img
-              src={achivement.image}
-              alt="image"
-              className="achivement__img"
-            />
+            {achivement.image}
             <h2 className="achivement__title">{achivement.title}</h2>
             <span className="achivement__subtitle">{achivement.subtitle}</span>
             <a

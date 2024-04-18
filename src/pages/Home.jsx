@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import ProfileImage from "../components/ProfileImage";
 import Work from "../components/Work";
 import Service from "../components/Service";
-import Achivement from "../components/Achivement";
-import cv from "../assets/efzr-cv.pdf";
 import "../styles/Home.css";
 
 function Home() {
@@ -42,7 +40,7 @@ function Home() {
                 </a>
               </div>
             </div>
-            <a href={cv} download className="home__button button">
+            <a href="/efzr-cv.pdf" download className="home__button button">
               Download CV
             </a>
           </div>
