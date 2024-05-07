@@ -3,7 +3,7 @@ import { BiX } from "react-icons/bi";
 
 function ServiceModal() {
   const { showModal, setShowModal, dataModal } = usePortfolio();
-  const { title, list } = dataModal;
+  const { title, list, modalTitle } = dataModal;
   return (
     <div className={`services__modal ${showModal && "active-modal"}`}>
       <div className="services__modal-content">
@@ -13,7 +13,7 @@ function ServiceModal() {
             setShowModal(false);
           }}
         />
-        <h2 className="services__modal-title">{title}</h2>
+        <h2 className="services__modal-title">{modalTitle}</h2>
         <ul className="services__modal-list grid">
           {list?.map((item, index) => (
             <li className="services__modal-item" key={index}>

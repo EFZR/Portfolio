@@ -8,6 +8,7 @@ import {
 } from "react-icons/bi";
 import Cisco from "../svg/certification-cisco.jsx";
 import Udemy from "../svg/certification-udemy.jsx";
+import Unicah from "../svg/certification-unicah.jsx";
 
 export const SERVICE = [
   {
@@ -15,6 +16,7 @@ export const SERVICE = [
     description:
       "I like to develop web applications with the latest technologies and trends.",
     icon: BiCodeAlt,
+    modalTitle: "Web Development",
     list: [
       "I enjoy developing web applications.",
       "I continuously seek to improve my skills and knowledge.",
@@ -22,25 +24,27 @@ export const SERVICE = [
     ],
   },
   {
-    title: "Backend Dev",
+    title: "Backend Dev.",
     description:
       "Implement logic for web applications using best practices and architectures.",
     icon: BiServer,
+    modalTitle: "Backend Stack",
     list: [
-      "Clean code is my goal on each project.",
-      "Learn the new technologies and architecture to make functional and scalable projects.",
-      "Analityc and problem solving skills.",
+      "Rust + Axum + SQLx + Modql + Postgres.",
+      "Python + Flask + Postgres.",
+      "C# + ASP.NET + Dapper + SQLServer.",
     ],
   },
   {
-    title: "Web Design",
+    title: "Frontend Dev.",
     description:
       "I like to design websites providing a good user Experience and user interface.",
     icon: BiBrush,
+    modalTitle: "Frontend Stack",
     list: [
-      "Fast and functional designs.",
-      "I like to create designs that are easy to use.",
-      "UX/UI design.",
+      "React + Vite + TS + Zustand + TailwindCSS + ReactRouterDom.",
+      "Nextjs + TS + Zustand + TailwindCSS.",
+      "RemixRun + TS + Zustand + TailwindCSS.",
     ],
   },
 ];
@@ -86,6 +90,12 @@ export const WORK = [
 
 export const ACHIVEMENT = [
   {
+    title: "Ciencias de la computación",
+    subtitle: "Ingeniería en ciencias de la computación",
+    link: "https://drive.google.com/file/d/1musOUfi0AuagcrcTUvaT7z-lK9LUerSE/view",
+    image: <Unicah />,
+  },
+  {
     title: "Networks",
     subtitle: "CCNA: Introduction to Networks",
     link: "https://www.credly.com/badges/db35c34a-09d4-4502-8541-33230e1dd420/public_url",
@@ -101,6 +111,12 @@ export const ACHIVEMENT = [
     title: "Python",
     subtitle: "Universidad Python - De cero a Experto",
     link: "https://www.udemy.com/certificate/UC-dff1a774-58e2-4da5-ad39-f89ed68dab3b/",
+    image: <Udemy />,
+  },
+  {
+    title: "MySQL",
+    subtitle: "SQL - Curso completo de Bases de Datos - de 0 a Avanzado",
+    link: "https://www.udemy.com/certificate/UC-00afdab1-f3f9-4d29-a071-9b4f1fbcb370/",
     image: <Udemy />,
   },
 ];

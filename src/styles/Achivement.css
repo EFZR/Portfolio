@@ -1,5 +1,6 @@
 .achivement__container {
   row-gap: 2rem;
+  justify-content: center;
 }
 
 .portfolio__page {
@@ -36,7 +37,7 @@
   text-align: center;
   justify-items: center;
   align-items: center;
-  row-gap: 1.2rem;
+  row-gap: 1rem;
   opacity: 0;
   filter: blur(4px);
   transform: translateY(10%);
